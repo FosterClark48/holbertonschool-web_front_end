@@ -1,0 +1,16 @@
+/*
+Assign Margin left and right at 10px to body tags
+Margin left and right at 15px to div tags using a mixin
+*/
+@mixin margin-horizontal($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+body {
+    @include margin-horizontal(10px);
+}
+
+div {
+    @include margin-horizontal(15px);
+}
