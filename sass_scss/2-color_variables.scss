@@ -1,0 +1,19 @@
+/*
+Assign body and p tags text color of #3D3D3D
+background color #6D6D6D to the HTML tags body and h2 using 2 vars
+*/
+$base-color: #3D3D3D;
+$back-color: #6D6D6D;
+
+body {
+    color: $base-color;
+    background-color: $back-color;
+}
+
+p {
+    color: $base-color;
+}
+
+h2 {
+    background-color: $back-color;
+}
