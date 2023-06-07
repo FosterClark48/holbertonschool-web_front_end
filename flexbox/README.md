@@ -1,7 +1,7 @@
 # Flexbox
 
 
-## Resources:books:
+## Resources :books:
 Read or watch:
 * [A Complete Guide to Flexbox | CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Flexbox Froggy - A game for learning CSS flexbox](https://flexboxfroggy.com/)
@@ -15,7 +15,7 @@ Read or watch:
 * [FLEX: A simple visual cheatsheet for flexbox](https://flexbox.malven.co/)
 
 ---
-## Learning Objectives:bulb:
+## Learning Objectives :bulb:
 At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google**:
 
 ### General
@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ---
 
-## Requirements:heavy_check_mark::clipboard:
+## Requirements :heavy_check_mark::clipboard:
 ### General
 - Allowed editors: `vi`, `vim`, `emacs`
 A `README.md` at the root of the project directory is mandatory
@@ -38,7 +38,7 @@ All of your files should end with a new line
 
 ---
 
-## Files:open_file_folder:
+## Files :open_file_folder:
 ### Required images for your HTML files
 Download the images linked in the [CSS Advanced](https://intranet.hbtn.io/projects/2063) and place them into an images directory at the root of the project.
 
@@ -1077,7 +1077,7 @@ article File
 </details>
 
 ---
-## Tasks:white_check_mark::memo:
+## Tasks :white_check_mark::memo:
 
 ### [0. Add display flex](./0-styles.css)
 Use the starter HTML and CSS files from this task to task 10. Copy the contents of the starter files into the files that you need to produce and make the necessary changes according to the task description.
@@ -1443,3 +1443,4 @@ In your `14-article.html`, inside the `post-share` div
 
 ## Author:black_nib:
 - **Foster Clark** - [fozc](https://github.com/FosterClark48) :octocat:
+- **LinkedIn** - [FosterClark12](https://www.linkedin.com/in/fosterclark12/) ![LinkedIn](./images/linkedin-original.svg)
