@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ---
 
-## Requirements
+## Requirements:heavy_check_mark::clipboard:
 ### General
 - Allowed editors: `vi`, `vim`, `emacs`
 A `README.md` at the root of the project directory is mandatory
@@ -38,7 +38,7 @@ All of your files should end with a new line
 
 ---
 
-## Files
+## Files:open_file_folder:
 ### Required images for your HTML files
 Download the images linked in the [CSS Advanced](https://intranet.hbtn.io/projects/2063) and place them into an images directory at the root of the project.
 
@@ -1077,7 +1077,7 @@ article File
 </details>
 
 ---
-## Tasks
+## Tasks:white_check_mark::memo::pencil:
 
 ### [0. Add display flex](./0-styles.css)
 Use the starter HTML and CSS files from this task to task 10. Copy the contents of the starter files into the files that you need to produce and make the necessary changes according to the task description.
