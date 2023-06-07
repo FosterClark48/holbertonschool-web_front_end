@@ -1443,4 +1443,4 @@ In your `14-article.html`, inside the `post-share` div
 
 ## Author:black_nib:
 - **Foster Clark** - [fozc](https://github.com/FosterClark48) :octocat:
-- **LinkedIn** - [FosterClark12](https://www.linkedin.com/in/fosterclark12/) <img src="./images/linkedin-original.svg" alt="LinkedIn" width="10" height="10">
+- **LinkedIn** - [FosterClark12](https://www.linkedin.com/in/fosterclark12/) <img src="./images/linkedin-original.svg" alt="LinkedIn" width="20" height="20">
