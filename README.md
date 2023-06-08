@@ -20,6 +20,11 @@ Here's what you can expect to learn throughout this course:
 ## Course Structure :building_construction:
 The course is project-based, meaning you'll learn by doing, creating several web projects from scratch. Each project will increase in complexity, allowing you to apply and deepen your knowledge incrementally.
 
+## Projects :computer:
+- Project 1: [**Developer Tools**](./developer_tools/)
+- Project 2: [**Sass**](./sass_scss/)
+- Project 3: [**Flexbox**](./flexbox/)
+
 ## Prerequisites :rocket:
 This course is designed for those with some basic knowledge of programming. It's recommended that you have some experience with a language like Python or C, and a basic understanding of web technologies.
 
