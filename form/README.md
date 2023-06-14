@@ -1,10 +1,6 @@
 # Forms
 
 
-#### Concepts :brain:
-*For this project, we expect you to look at this concept:*
-- [A Crash Course on Accessibility](https://intranet.hbtn.io/concepts/956)
-
 ## Resources :books:
 **Read or watch:**
 * [An Extensive Guide To Web Form Usability — Smashing Magazine]()
