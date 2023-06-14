@@ -1,6 +1,5 @@
 # Forms
 
-
 ## Resources :books:
 **Read or watch:**
 * [An Extensive Guide To Web Form Usability — Smashing Magazine]()
