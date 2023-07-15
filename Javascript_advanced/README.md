@@ -1,5 +1,5 @@
 # Javascript Advanced
-![image](https://github.com/FosterClark48/holbertonschool-web_front_end/assets/105602291/1ce5cc7a-2746-4c53-b23b-2c2051138e40)
+![image](https://github.com/FosterClark48/holbertonschool-web_front_end/assets/105602291/13312aab-5d5c-42da-a358-7323702cc645)
 
 ## Resources :books:
 Read or watch:
