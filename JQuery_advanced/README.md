@@ -1,5 +1,5 @@
 # JQuery Advanced
-![image](https://github.com/FosterClark48/holbertonschool-system_engineering-devops/assets/105602291/954bc029-185b-41bb-84db-1bd9484f1ee6)
+![image](https://github.com/FosterClark48/holbertonschool-web_front_end/assets/105602291/c78d5384-3367-4377-8107-e4d5c46375cc)
 
 ## Resources :books:
 Read or watch:
