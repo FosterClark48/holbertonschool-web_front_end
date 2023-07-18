@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 2</title>
+        <link rel="icon" type="image/ico" href="https://intranet.hbtn.io/favicon_black.ico">
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+            crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <script type="application/javascript">
+            function createFamilyTree() {
+                var familyTable = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Guillaume</td>
+                                <td>Salva</td>
+                            </tr>
+                            <tr>
+                                <td>Paulette</td>
+                                <td>Salva</td>
+                            </tr>
+                            <tr>
+                                <td>Antoine</td>
+                                <td>Salva</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    `;
+
+                $('body').append(familyTable);
+            }
+            createFamilyTree();
+        </script>
+    </body>
+
+</html>
