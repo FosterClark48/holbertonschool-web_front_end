@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 7</title>
+        <link rel="icon" type="image/ico" href="https://intranet.hbtn.io/favicon_black.ico">
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <script type="application/javascript">
+            function createSearchForm() {
+                let form = $('<form>').append(
+                    $('<input>').attr('type', 'text'),
+                    $('<input>').attr('type', 'submit')
+                );
+
+                let resultList = $('<ul>');
+
+                form.on('submit', function(e) {
+                    e.preventDefault();
+                    let searchText = $('input[type="text"]').val();
+                    queryWikipedia(searchText);
+                });
+
+                $('body').append(form);
+                $('body').append(resultList);
+            }
+
+        function addNewArticle(id, title, snippet) {
+            let newArticle = $('<li>').append(
+                    $('<p>').append(
+                        $('<span>').text(id + ' - '),
+                        $('<b>').text(title)
+                    ),
+                    $('<p>').html(snippet)
+                );
+
+                $('ul').append(newArticle);
+            }
+
+        function queryWikipedia(search) {
+            $.ajax({
+                url: 'https://en.wikipedia.org/w/api.php',
+                data: {
+                    action: 'query',
+                    list: 'search',
+                    srsearch: search,
+                    format: 'json',
+                    origin: '*',
+                    srprop: 'snippet'
+                },
+                dataType: 'json',
+                success: function(data) {
+                    $('ul').empty();
+                    data.query.search.forEach(function(result) {
+                        addNewArticle(result.pageid, result.title, result.snippet);
+                    });
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            createSearchForm();
+        });
+        </script>
+    </body>
+
+</html>
