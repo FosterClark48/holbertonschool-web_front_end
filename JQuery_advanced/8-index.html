@@ -51,7 +51,7 @@
             console.log("buildPagination called with", numberOfItems, itemsPerPage, currentOffset);
             $('#pagination').empty();
 
-            for(let i = 0; i < Math.ceil(numberOfItems / itemsPerPage); i++){
+            for(let i = 0; i < Math.ceil(numberOfItems / itemsPerPage); i++){ // math.ceil rounds number up to nearest whole number
                 let item = $('<li>').css({
                     'cursor': 'pointer',
                     'margin-left': '10px',
