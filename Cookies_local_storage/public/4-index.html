@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="icon" type="image/ico" href="https://intranet.hbtn.io/favicon_black.ico">
+
+</head>
+<body>
+
+    <div id="loginForm">
+        <h2>Login to the website</h2>
+        <input type="text" id="firstname" placeholder="First Name">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="setCookiesAndShowWelcomeMessage()">Log me in</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+    <script>
+        function setCookiesAndShowWelcomeMessage() {
+            let firstname = document.getElementById('firstname').value;
+            let email = document.getElementById('email').value;
+
+            let expiryDate = new Date();
+            expiryDate.setTime(expiryDate.getTime() + (10 * 24 * 60 * 60 * 1000));
+
+            Cookies.set("firstname", firstname, {expires: expiryDate});
+            Cookies.set("email", email, {expires: expiryDate});
+
+            showWelcomeMessageOrForm();
+        }
+
+        function showForm() {
+            let form = document.getElementById('loginForm');
+            form.style.display = 'block';
+        }
+
+        function hideForm() {
+            let form = document.getElementById('loginForm');
+            form.style.display = 'none';
+        }
+
+        function deleteCookiesAndShowForm() {
+            // remove welcome message
+            let welcomeMessage = document.getElementById('welcomeMessage');
+            if (welcomeMessage) {
+                welcomeMessage.remove();
+            }
+
+            Cookies.remove("firstname");
+            Cookies.remove("email");
+
+            showForm();
+        }
+
+        function showWelcomeMessageOrForm() {
+            let firstname = Cookies.get('firstname');
+
+            if (!firstname) {
+                showForm();
+            } else {
+                hideForm();
+                let h1 = document.createElement('h1');
+                h1.id = 'welcomeMessage';
+                let logout = document.createElement('a');
+                logout.href = '#';
+                logout.innerHTML = '(logout)';
+                logout.style.fontWeight = 'normal';
+                logout.style.fontStyle = 'italic';
+                logout.style.marginLeft = '10px';
+                logout.onclick = deleteCookiesAndShowForm;
+                h1.innerHTML = 'Welcome: ' + firstname + '';
+                h1.appendChild(logout);
+                document.body.appendChild(h1);
+            }
+        }
+
+        window.onload = showWelcomeMessageOrForm;
+    </script>
+</body>
+</html>
