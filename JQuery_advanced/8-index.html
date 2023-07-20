@@ -80,7 +80,7 @@
                 },
                 dataType: 'json',
                 success: function(data) {
-                    $('ul').not('#pagination').empty();
+                    $('ul').not('#pagination').empty(); // clears old content so new content can show
                     data.query.search.forEach(function(result) {
                         addNewArticle(result.pageid, result.title, result.snippet);
                     });
