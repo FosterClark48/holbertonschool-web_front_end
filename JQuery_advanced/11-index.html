@@ -21,7 +21,7 @@
                     $('<span>').text(postInfo)
                 );
 
-                $('body').append(paragraph);
+                $('#posts').prepend(paragraph);
             }
 
             function listPosts() {
@@ -79,8 +79,9 @@
             }
 
         $(document).ready(function() {
-            listPosts();
             buildForm();
+            $('body').append($('<div>').attr('id', 'posts'));
+            listPosts();
         });
         </script>
     </body>
